@@ -9,3 +9,7 @@ alias berf='USE_BOOTSNAP=true bundle exec rspec --only-failures'
 ## Rake
 
 alias rdmtl='bundle exec rake db:migrate db:test:prepare factory_bot:lint'
+
+
+## Vim
+alias vat="vimcat"
