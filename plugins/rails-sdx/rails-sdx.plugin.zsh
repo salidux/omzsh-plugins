@@ -7,9 +7,12 @@ alias besf='USE_BOOTSNAP=true bundle exec rspec --only-failures'
 
 
 ## Rake
-
 alias rdmtl='bundle exec rake db:migrate db:test:prepare factory_bot:lint'
 
 
 ## Vim
 alias vat="vimcat"
+
+
+## GIT
+alias gll="git --no-pager log --pretty=format:'%C(yellow)%h %C(cyan)%ad %C(blue)<%ae>%C(auto): %s' --date=iso8601 -n17"
