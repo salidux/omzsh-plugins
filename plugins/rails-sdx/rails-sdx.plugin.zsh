@@ -7,7 +7,7 @@ alias besf='USE_BOOTSNAP=true bundle exec rspec --only-failures'
 
 
 ## Rake
-alias rdmtl='bundle exec rake db:migrate db:test:prepare factory_bot:lint'
+alias rmpl='bundle exec rake db:migrate db:test:prepare factory_bot:lint'
 
 
 ## Vim
