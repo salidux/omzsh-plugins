@@ -4,6 +4,7 @@
 # config/boot.rb: require 'bootsnap/setup' if ENV["USE_BOOTSNAP"] == "true"
 alias bes='USE_BOOTSNAP=true bundle exec rspec'
 alias besf='USE_BOOTSNAP=true bundle exec rspec --only-failures'
+alias be='USE_BOOTSNAP=true bundle exec'
 
 
 ## Rake
