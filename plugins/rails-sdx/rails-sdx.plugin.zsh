@@ -2,8 +2,9 @@
 
 # I use Bootsnap (https://github.com/Shopify/bootsnap) with
 # config/boot.rb: require 'bootsnap/setup' if ENV["USE_BOOTSNAP"] == "true"
-alias bes='USE_BOOTSNAP=true bundle exec rspec'
-alias besf='USE_BOOTSNAP=true bundle exec rspec --only-failures'
+# spec/rails_helper.rb: require "simplecov" unless ENV["NOCOV"] == "1"
+alias bes='NOCOV=1 USE_BOOTSNAP=true bundle exec rspec'
+alias besf='NOCOV=1 USE_BOOTSNAP=true bundle exec rspec --only-failures'
 alias be='USE_BOOTSNAP=true bundle exec'
 
 
