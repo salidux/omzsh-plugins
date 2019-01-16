@@ -1,6 +1,7 @@
 alias hr='heroku run'
 alias hrc='heroku run rails console'
 alias hrr='heroku run rails runner'
+alias hsql='heroku pg:psql'
 
 
 # Shows the default target application if no `-a` or `--app` flag is used
