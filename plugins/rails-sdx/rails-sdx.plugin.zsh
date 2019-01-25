@@ -9,7 +9,7 @@ alias be='USE_BOOTSNAP=true bundle exec'
 
 
 ## Rake
-alias rmpl='bundle exec rake db:migrate db:test:prepare factory_bot:lint'
+alias rdmtpfl='bundle exec rake db:migrate db:test:prepare factory_bot:lint'
 
 
 ## Vim
