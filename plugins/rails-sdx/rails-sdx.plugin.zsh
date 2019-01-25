@@ -20,3 +20,10 @@ alias vat="vimcat"
 alias gll="git --no-pager log --pretty=format:'%C(yellow)%h %C(cyan)%ad %C(blue)<%ae>%C(auto): %s' --date=iso8601 -n17"
 alias gfix="function _git_commit_fixup(){ git commit -v --fixup=$1 };_git_commit_fixup"
 alias grbmi="git rebase -i --autosquash master"
+
+
+
+## Rails
+
+# https://scoutapp.com/devtrace
+alias rs="USE_BOOTSNAP=true SCOUT_DEV_TRACE=true bundle exec rails server"
