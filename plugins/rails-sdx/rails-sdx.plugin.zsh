@@ -6,6 +6,7 @@
 alias bes='NOCOV=1 USE_BOOTSNAP=true bundle exec rspec'
 alias besf='NOCOV=1 USE_BOOTSNAP=true bundle exec rspec --only-failures'
 alias be='USE_BOOTSNAP=true bundle exec'
+alias ber='USE_BOOTSNAP=true bundle exec rake'
 
 
 ## Rake
