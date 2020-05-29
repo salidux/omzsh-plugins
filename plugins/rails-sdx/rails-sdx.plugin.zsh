@@ -22,9 +22,15 @@ alias gll="git --no-pager log --pretty=format:'%C(yellow)%h %C(cyan)%ad %C(blue)
 alias gfix="function _git_commit_fixup(){ git commit -v --fixup=$1 };_git_commit_fixup"
 alias grbmi="git rebase -i --autosquash master"
 
+# Alias to create a new branch using the JIRA ticket (from the URL) as prefix of the branch name
+alias gcjb='function _git_checkout_jira() { branch_name="`basename $1`-$2"; git checkout -b $branch_name; }; _git_checkout_jira'
 
 
 ## Rails
 
 # https://scoutapp.com/devtrace
-alias rs="USE_BOOTSNAP=true SCOUT_DEV_TRACE=true bundle exec rails server"
+alias rs="USE_BOOTSNAP=false SCOUT_DEV_TRACE=false bundle exec rails server"
+alias rc='USE_BOOTSNAP=true rails console'
+
+## Stripe environment
+alias stripehooks='ultrahook stripe localhost:3000'

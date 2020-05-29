@@ -16,6 +16,7 @@ prompt_heroku() {
 # Sets the HEROKU_APP env var and adds a prompt segment
 function set_heroku_app() {
   export HEROKU_APP=$1
+  iterm2_set_user_var herokuApp $HEROKU_APP
 
   if [[ $ZSH_THEME = "agnoster" ]]; then
     build_prompt() {
