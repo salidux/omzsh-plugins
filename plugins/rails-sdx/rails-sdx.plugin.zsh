@@ -33,4 +33,4 @@ alias rs="USE_BOOTSNAP=false SCOUT_DEV_TRACE=false bundle exec rails server"
 alias rc='USE_BOOTSNAP=true rails console'
 
 ## Stripe environment
-alias stripehooks='ultrahook stripe localhost:3000'
+alias stripehooks='stripe listen --forward-to http://localhost:3000/stripe_support/events'
