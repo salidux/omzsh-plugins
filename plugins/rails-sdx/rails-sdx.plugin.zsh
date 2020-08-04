@@ -30,6 +30,7 @@ alias gcjb='function _git_checkout_jira() { branch_name="`basename $1`-$2"; git 
 
 # https://scoutapp.com/devtrace
 alias rs="USE_BOOTSNAP=false SCOUT_DEV_TRACE=false bundle exec rails server"
+alias rsw="WEBPACK_DEV_SERVER_LIVERELOAD=false overmind s -l rails,webpack"
 alias rc='USE_BOOTSNAP=true rails console'
 
 ## Stripe environment
