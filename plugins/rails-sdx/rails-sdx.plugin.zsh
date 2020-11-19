@@ -35,3 +35,6 @@ alias rc='USE_BOOTSNAP=true rails console'
 
 ## Stripe environment
 alias stripehooks='stripe listen --forward-to http://localhost:3000/stripe_support/events'
+
+export DISABLE_SPRING=true
+export RUBYOPT=-W:no-deprecated
