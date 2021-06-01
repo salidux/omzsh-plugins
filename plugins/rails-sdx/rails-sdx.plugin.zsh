@@ -3,10 +3,12 @@
 # I use Bootsnap (https://github.com/Shopify/bootsnap) with
 # config/boot.rb: require 'bootsnap/setup' if ENV["USE_BOOTSNAP"] == "true"
 # spec/rails_helper.rb: require "simplecov" unless ENV["NOCOV"] == "1"
-alias bes='NOCOV=1 USE_BOOTSNAP=true bundle exec rspec --format documentation'
-alias besf='NOCOV=1 USE_BOOTSNAP=true bundle exec rspec --only-failures'
-alias be='USE_BOOTSNAP=true bundle exec'
-alias ber='USE_BOOTSNAP=true bundle exec rake'
+alias bes='NOCOV=1 SKIP_WEBPACK_COMPILE=true bundle exec rspec'
+alias besw='NOCOV=1 bundle exec rspec'
+alias besd='NOCOV=1 SKIP_WEBPACK_COMPILE=true bundle exec rspec --format documentation'
+alias besf='NOCOV=1 bundle exec rspec --only-failures'
+alias be='bundle exec'
+alias ber='bundle exec rake'
 
 
 ## Rake
@@ -31,7 +33,7 @@ alias gcjb='function _git_checkout_jira() { branch_name="`basename $1`-$2"; git 
 # https://scoutapp.com/devtrace
 alias rs="USE_BOOTSNAP=false SCOUT_DEV_TRACE=false bundle exec rails server"
 alias rsw="WEBPACK_DEV_SERVER_LIVERELOAD=false overmind s -l rails,webpack"
-alias rc='USE_BOOTSNAP=true rails console'
+alias rc='rails console'
 
 ## Stripe environment
 alias stripehooks='stripe listen --forward-to http://localhost:3000/stripe_support/events'
