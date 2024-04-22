@@ -1,5 +1,6 @@
 alias hr='heroku run'
-alias hrc='heroku run rails console'
+alias hrc='heroku run "rails console -- --noautocomplete"'
+alias hrcp='heroku run "rails console -- --noautocomplete" --size=private-s'
 alias hrr='heroku run rails runner'
 alias hsql='heroku pg:psql'
 alias hconf='heroku config'
